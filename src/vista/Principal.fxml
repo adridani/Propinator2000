@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPanePrincipal" prefHeight="720.0" prefWidth="1260.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.PrincipalController">
+   <children>
+      <Pane prefHeight="720.0" prefWidth="1260.0" style="-fx-background-color: linear-gradient(to bottom, #b2f0c2, #4caf50); -fx-background-radius: 20;">
+         <children>
+            <Button fx:id="botonNuevos" layoutX="255.0" layoutY="297.0" mnemonicParsing="false" onAction="#botonNuevos" prefHeight="200.0" prefWidth="225.0" style="-fx-background-color: linear-gradient(to bottom, #ffeb3b, #ff9800); -fx-background-radius: 20; -fx-padding: 10 20; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0, 3); -fx-text-fill: Black;" text="Calcular&#10;con nuevos&#10;datos" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="botonAntiguos" layoutX="786.0" layoutY="297.0" mnemonicParsing="false" onAction="#botonAntiguos" prefHeight="200.0" prefWidth="225.0" style="-fx-background-color: linear-gradient(to bottom, #ffeb3b, #ff9800); -fx-background-radius: 20; -fx-padding: 10 20; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0, 3); -fx-text-fill: Black;" text="Calcular&#10;con datos&#10;anteriores" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="283.0" layoutY="58.0" text="Propinator2000">
+                <textFill>
+                    <LinearGradient>
+                        <stops>
+                            <Stop offset="0.0" color="#ffe73b"/>
+                            <Stop offset="1.0" color="#ff9800"/>
+                        </stops>
+                    </LinearGradient>
+                </textFill>
+                <font>
+                    <Font name="Century Gothic" size="96.0" />
+                </font>
+            </Label>
+            <Label layoutX="1189.0" layoutY="689.0" prefHeight="17.0" prefWidth="76.0" text="by AdriDani" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
